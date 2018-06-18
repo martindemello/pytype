@@ -15,6 +15,8 @@ from setuptools import setup, Extension  # pylint: disable=g-multiple-import
 # Path to directory containing setup.py
 here = os.path.abspath(os.path.dirname(__file__))
 
+print("PLATFORM: %s" % sys.platform)
+
 
 # We need some platform-dependent compile args for the C extensions.
 if sys.platform == 'win32':
